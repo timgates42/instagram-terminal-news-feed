@@ -269,7 +269,7 @@ def generate_ANSI_from_pixels(pixels, width, height, bgcolor_rgba, current_ansi_
                     # cause colors that didn't match to now match
                     # We cannot do this optimization in overdraw mode because we cannot assume that the bg color
                     # is already drawn at this location. We could presumably pass in the known state of the screen
-                    # and thus have this knoweldge if the optimization was worthwhile.
+                    # and thus have this knowledge if the optimization was worthwhile.
                     if not is_overdraw and (draw_char == " ") and (color == bgcolor_ANSI):
                         skip_pixel = True
 
